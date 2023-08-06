@@ -1,0 +1,13 @@
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: clamp(600px, 50%, 900px);
+
+  padding: 5rem;
+
+  border-radius: 1rem;
+
+  background-color: #111;
+}
