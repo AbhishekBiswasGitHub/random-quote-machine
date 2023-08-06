@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import Quote from "./Quote";
+
 import "./App.css";
 
 const App = () => {
@@ -23,7 +25,14 @@ const App = () => {
     if (!text || !author) getQuote();
   });
 
-  return <div id="quote-box"></div>;
+  return (
+    <div id="quote-box">
+      <Quote
+        text={text}
+        author={author}
+      />
+    </div>
+  );
 };
 
 export default App;
