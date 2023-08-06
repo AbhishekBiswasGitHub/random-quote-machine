@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import Quote from "./Quote";
+import Controls from "./Controls";
 
 import "./App.css";
 
@@ -30,6 +31,11 @@ const App = () => {
       <Quote
         text={text}
         author={author}
+      />
+      <Controls
+        text={text}
+        author={author}
+        getQuote={getQuote}
       />
     </div>
   );
